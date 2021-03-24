@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font: 13px/20px Ubuntu, Arial, Helvetica, sans-serif;
+  color: #888;
+}
+
+body {
+  background-color: rgb(185, 241, 241);
+}
+
+.popup {
+  position: absolute;
+  min-width: 420px;
+  max-width: 520px;
+  left: 50%;
+  background: #fff;
+}
+
+.close {
+  display: block;
+  border-radius: 0px;
+  width: 14px;
+  height: 14px;
+  right: 33px;
+  top: 37px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.popup .close i {
+  background: url(/images/close_icons.png);
+}
+
+.popup .close i {
+  display: block;
+  border-radius: 0px;
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  background-position: -1px -46px !important;
+}
+
+.popup .close:hover i {
+  background-position: -30px -46px;
+  background-color: #b8d554;
+}
+
+.form_head {
+  border-bottom: 2px solid #b8d554 !important;
+  padding: 34px 75px 35px 35px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #383838;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.form_head h2 {
+  margin: 0;
+}
+
+.form_body {
+  margin: 0;
+  padding: 29px 35px 6px;
+}
+
+.form-control {
+  background-color: #fff;
+  border: 0px solid #d5dadc;
+  box-shadow: none;
+  border-radius: 0px;
+  height: auto;
+  padding: 0px;
+  margin: 0px 0px 19px;
+}
+
+.form-control label {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.form-control label .star {
+  margin: 0;
+  top: 0px;
+}
+
+.form .star {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 0;
+  margin: 0 0 0 4px;
+  position: relative;
+  color: #e62222;
+}
+
+input[type="text"] {
+  background: #f7f7f7;
+  border: 1px solid #eaebec;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #383838;
+  height: auto;
+  font-size: 13px;
+  padding: 8px 13px 7px;
+}
+
+.popup input[type="text"] {
+  width: 100%;
+}
+
+input:not(.button) {
+  line-height: 20px;
+}
+
+input[type="tel"] {
+  background: #f7f7f7;
+  border: 1px solid #eaebec;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #383838;
+  height: auto;
+  font-size: 13px;
+  padding: 8px 13px 7px;
+  width: 100%;
+}
+
+.clearboth {
+  clear: both;
+}
+
+.popup .form .form_footer {
+  padding: 0 35px 12px;
+}
+
+.form .form_footer {
+  margin: 0 0 23px 0;
+}
+
+.licence_block.filter {
+  padding: 0 0 21px;
+  margin: -18px 0 0;
+  position: relative;
+  display: block !important;
+  box-shadow: none;
+  top: 0;
+}
+
+.licence_block.filter input[type="checkbox"] {
+  display: block;
+  visibility: hidden;
+  width: 0;
+  line-height: 0;
+  margin: 0;
+}
+
+.filter.label_block input + label {
+  padding-left: 23px;
+  font-size: 13px;
+  color: #888;
+}
+
+.filter input[type="checkbox"] + label:hover::before{
+  display: inline-block;
+  z-index: 3;
+}
+.filter input[type="checkbox"] + label::before {
+  font-size: 0;
+  content: ".";
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 0px;
+  border-radius: 2px;
+  
+
+}
+.filter input[type="checkbox"]:checked + label::before {
+  font-size: 0;
+  content: ".";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.filter input[type="checkbox"] + label::after {
+  font-size: 0;
+  content: ".";
+  display: block;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  background: url("/local/templates/aspro_optimus_v2/images/input_icons.png") 0px -19px no-repeat;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.filter input[type="checkbox"]:checked + label::after {
+  font-size: 0;
+  content: ".";
+  display: block;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  border-radius: 2px;
+  background-position: 0px 3px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color ease-out 0.07s;
+}
+
+a:hover {
+  color: #464646;
+}
+
+.button {
+  padding: 9px 13px 10px;
+}
+
+input[type="submit"] {
+  text-transform: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input.button {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2px;
+  border: none;
+  background: #b8d554;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button.transparent {
+  color: #464646;
+  border-color: #b8d554;
+  border: 1px solid #ddd;
+  background: none;
+  margin-left: 13px;
+}
+
+.button.transparent:not(.text):hover {
+  border-color: #39bade;
+  background: #39bade;
+  color: #fff;
+}
